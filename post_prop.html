@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!--=============== BOXICONS ===============-->
+        
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/post_prop.css">
+
+        <!-- <link rel="stylesheet" href="https ://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+        
+        <title>Responsive real state website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    SwapMate <i class="bi bi-house-fill"></i>
+                </a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="login.html" class="nav__link">
+                                <i class="bi bi-person-circle"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <!-- <i class="bi bi-moon change-theme" id="theme-button"></i>
+
+                <a href="#" class="button nav__button">
+                    Subscribe
+                </a> -->
+            </nav>
+            
+            <hr class="down-hr">
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <section class="filter">
+                <div class="in-nav">
+                    Filter To Be Applied
+                </div>
+                <div class="filter-cont">
+                    <h4>BHK Type</h4>
+                    <div class="filt-button">
+                        <div class="filt-2">
+                            <button class="button-2">1 RK</button>
+                            <button class="button-2">1 BHK</button>
+                            <button class="button-2">2 BHK</button>
+                        </div>
+                        <div class="filt-2">
+                            <button class="button-2">3 BHK</button>
+                            <button class="button-2">4 BHK</button>
+                            <button class="button-2">4+ BHK</button>
+                        </div>
+                    </div>
+                    
+                    <h4>Preferred Tenants</h4>
+                    <div class="check">
+                        <div class="check-2">
+                            <label class="container-2">Family
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                        <div class="check-2">
+                            <label class="container-2">Bachelor
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                        <div class="check-2">
+                            <label class="container-2">Company
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                    </div>
+                    <h4>Furnishing</h4>
+                    <div class="check">
+                        <div class="check-2">
+                            <label class="container-2">Full
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                        <div class="check-2">
+                            <label class="container-2">Semi
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                        <div class="check-2">
+                            <label class="container-2">None
+                                <input type="checkbox" name="radio">  
+                                <span class="check"></span>  
+                            </label>  
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            </section>
+            <section class="main-sec">
+                <form>
+                    <ul class="form-style-1">
+                        <li><label>Property Type <span class="required">*</span>
+                            <div class="items">
+                                <div class="items-1">
+                                Pg/Hostel <input type="checkbox"></div>
+                                <div class="items-1">
+                                Villa<input type="checkbox"></div>
+                                <div class="items-1">
+                                Flats<input type="checkbox"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Title <span class="required">*</span></label>
+                            <input type="text" name="field3" class="text-1" />
+                        </li>
+                        <li>
+                            <!-- <label>Subject</label>
+                            <select name="field4" class="field-select">
+                            <option value="Advertise">Advertise</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="General Question">General</option>
+                            </select> -->
+
+                            <label>Bedrooms <span class="required">*</span></label>
+                            <input type="number" name="bedrooms" class="number-1" min="1">
+                        </li>
+                        
+                        <li>
+                            <label>Bathrooms <span class="required">*</span></label>
+                            <input type="number" name="bathrooms" class="number-1" min="0">
+                        </li>
+
+                        <li>
+                            <label>Roommates (Currently Living) <span class="required">*</span></label>
+                            <input type="number" name="bathrooms" class="number-1" min="0">
+                        </li>
+
+                        <li>
+                            <label>Age of the Property <span class="required">*</span></label>
+                            <input type="text" name="year_built">
+                        </li>
+
+                        <li>
+                            <label>Photos & Videos</label>
+                            <input type="file" name="" id="">
+                        </li>
+
+                        <li>
+                            <label>Description <span class="required">*</span></label>
+                            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit" />
+                        </li>
+                    </ul>
+                    </form>
+
+                    <div class="image">
+                        <img src="/assets/img/form_build-2.jpg" alt="" srcset="">
+                    </div>
+            </section>
+            <section class="quick-link"></section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a href="#" class="footer__logo">
+                        SwapMate <i class="bi bi-house-fill"></i>
+                    </a>
+                    <p class="footer__description">
+                        Our vision is to make all people <br> 
+                        the best place to live for them.
+
+                    </p>
+                </div>
+
+                <div class="footer__content">   
+                    <div>
+                        <h3 class="footer__title">
+                            About
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Features</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">News & Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Company
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">How we work?</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Capital</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Security</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Support
+                        </h3>
+
+                        <ul class="footer__links">
+                            <li>
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Support center</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="footer__title">
+                            Follow Us
+                        </h3>
+
+                        <ul class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <i class="bi bi-pinterest"></i>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__info container">
+                <span class="footer__copy">
+                    &#169; Bedimcode. All rigths reserved
+                </span>
+
+                <div class="footer__privacy">
+                    <a href="#">Terms & Agreements</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            
+        </footer>
+
+
+        <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bi bi-chevron-double-up"></i>
+        </a>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src=""></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
